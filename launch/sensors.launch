@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<launch>
+
+    <!-- CAMERAS -->
+    <include file="$(find norlab_basler_camera_driver)/launch/stereo_acquisition.launch"/>
+
+    <!-- LIDAR -->
+    <include file="$(find velodyne_pointcloud)/launch/VLP16_points.launch" >
+        <arg name="frame_id" value="lidar_link"/>
+    </include>
+
+    <!-- IMU -->
+    <include file="$(find backpack_launchers)/launch/imu.launch" />
+
+    <!-- GPS -->
+    <include file="$(find backpack_launchers)/launch/gps.launch">
+	<arg name="port" value="/dev/ttyACM0"/>
+	<arg name="baud" value="115200"/>
+        <arg name="frame_id" value="gps_link"/>
+    </include>
+</launch>
