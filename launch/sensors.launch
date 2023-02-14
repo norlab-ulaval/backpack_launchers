@@ -2,7 +2,7 @@
 <launch>
 
     <!-- CAMERAS -->
-    <include file="$(find backpack_launchers)/launch/cameras.launch"/>
+    <include file="$(find norlab_basler_camera_driver)/launch/stereo_acquisition.launch"/>
 
     <!-- LIDAR -->
     <include file="$(find velodyne_pointcloud)/launch/VLP16_points.launch" >
