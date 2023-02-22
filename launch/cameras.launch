@@ -6,7 +6,7 @@
 		<arg name="image_encoding" default="bayer_rggb12" />
 		<arg name="enable_bracketing" default="true" />
 		<arg name="enable_panoramic" default="true" />
-		<arg name="frame_rate" default="10" />
+		<arg name="frame_rate" default="20.0" />
 		<arg name="camera1_calibration_url" default="package://norlab_basler_camera_driver/config/camera1_calibration_file.yaml" />
 		<arg name="camera2_calibration_url" default="package://norlab_basler_camera_driver/config/camera2_calibration_file.yaml" />
 
@@ -29,7 +29,7 @@
     </group>
 
 	<!-- DEBAYER and RECTIFY-->
-	<arg name="enable_debayer" default="true" />
+	<arg name="enable_debayer" default="false" />
 	<arg name="enable_rectify" default="false" />
 
 	<!-- CAMERA 1 -->
