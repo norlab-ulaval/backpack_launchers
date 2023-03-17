@@ -3,7 +3,8 @@
 
     <node pkg="rosbag" type="record" name="rosbag_record"
         args="record -o /home/robot/bags/backpack 
-                /stereo/camera1/camera_info 
+		/rosout
+		/stereo/camera1/camera_info 
                 /stereo/camera1/image 
                 /stereo/camera2/camera_info
                 /stereo/camera2/image 

@@ -5,12 +5,12 @@
 		<arg name="startup_user_set" default="UserSet1" />
 		<arg name="image_encoding" default="bayer_rggb12" />
 		<arg name="enable_bracketing" default="true" />
-		<arg name="enable_panoramic" default="true" />
+		<arg name="enable_panoramic" default="false" />
 		<arg name="frame_rate" default="20.0" />
 		<arg name="camera1_calibration_url" default="package://norlab_basler_camera_driver/config/camera1_calibration_file.yaml" />
 		<arg name="camera2_calibration_url" default="package://norlab_basler_camera_driver/config/camera2_calibration_file.yaml" />
 
-		<arg name="respawn" default="false" />
+		<arg name="respawn" default="true" />
 		<arg name="debug" default="false" />
 		<arg unless="$(arg debug)" name="launch_prefix" value="" />
     	<arg if="$(arg debug)" name="launch_prefix" value="gdb -ex run --args" />
