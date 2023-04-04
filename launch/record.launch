@@ -4,17 +4,17 @@
     <node pkg="rosbag" type="record" name="rosbag_record"
         args="record -o /home/robot/bags/backpack 
 		/rosout
-		/stereo/camera1/camera_info 
-                /stereo/camera1/image 
-                /stereo/camera2/camera_info
-                /stereo/camera2/image 
-                /stereo/metadata 
-                /gps_data_raw 
-                /MTI_imu/data_raw 
-                /MTI_imu/data 
-                /tf 
-                /tf_static 
-                /velodyne_points"
+        /stereo/camera1/image
+        /stereo/camera2/image
+		/stereo/camera1/camera_info  
+        /stereo/camera2/camera_info
+        /stereo/metadata 
+        /gps_data_raw 
+        /MTI_imu/data_raw 
+        /MTI_imu/data 
+        /tf 
+        /tf_static 
+        /velodyne_points"
     />
 
 </launch>
