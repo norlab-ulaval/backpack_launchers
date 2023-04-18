@@ -2,11 +2,17 @@
 <launch>
     <!-- CAMERAS -->
     <include file="$(find backpack_launchers)/launch/cameras.launch"/>
+    <include file="$(find norlab_basler_camera_driver)/launch/image_decompression.launch"/>
+    <!-- <include file="$(find norlab_basler_camera_driver)/launch/converter_16bits_to_8bits.launch"/> -->
 
     <!-- LIDAR -->
     <include file="$(find velodyne_pointcloud)/launch/VLP16_points.launch" >
         <arg name="frame_id" value="lidar_link"/>
     </include>
+    <node name="pointcloud_to_laserscan_node" pkg="pointcloud_to_laserscan" type="pointcloud_to_laserscan_node" output="screen">
+        <remap from="cloud_in" to="/map"/>
+        <remap from="scan" to="/2d_map"/>
+    </node>
 
     <!-- IMU -->
     <include file="$(find backpack_launchers)/launch/imu.launch" />
