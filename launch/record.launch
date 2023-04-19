@@ -5,8 +5,11 @@
         args="record -o /home/robot/bags/backpack 
 		/rosout
 		/stereo/camera1/camera_info  
+        /stereo/camera1/image_compressed
+        /stereo/camera1/metadata
         /stereo/camera2/camera_info
-        /stereo/image_metapackets
+        /stereo/camera2/image_compressed
+        /stereo/camera2/metadata
         /gps_data_raw 
         /MTI_imu/data_raw 
         /MTI_imu/data
