@@ -3,7 +3,6 @@
     <!-- CAMERAS -->
     <include file="$(find backpack_launchers)/launch/cameras.launch"/>
     <include file="$(find norlab_basler_camera_driver)/launch/image_decompression.launch"/>
-    <!-- <include file="$(find norlab_basler_camera_driver)/launch/converter_16bits_to_8bits.launch"/> -->
 
     <!-- LIDAR -->
     <include file="$(find velodyne_pointcloud)/launch/VLP16_points.launch" >
