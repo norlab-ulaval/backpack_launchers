@@ -2,5 +2,6 @@
 <launch>
     <include file="$(find backpack_description)/launch/description.launch"/>
     <include file="$(find backpack_microcontrollers)/launch/esp32.launch"/>
+    <include file="$(find foxglove_bridge)/launch/foxglove_bridge.launch"/>
     <!-- <include file="$(find backpack_microcontrollers)/launch/stm32.launch"/> -->
 </launch>
