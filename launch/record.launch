@@ -6,13 +6,16 @@
 		/rosout
 		/stereo/camera1/camera_info  
         /stereo/camera1/image_compressed
+        /stereo/camera1/image
         /stereo/camera1/metadata
         /stereo/camera2/camera_info
         /stereo/camera2/image_compressed
+        /stereo/camera2/image
         /stereo/camera2/metadata
         /gps_data_raw 
         /MTI_imu/data_raw 
-        /MTI_imu/data
+	    /MTI_imu/data
+	    /nmea_sentence
         /stm32_parameters
         /tf 
         /tf_static 

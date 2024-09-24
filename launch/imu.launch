@@ -12,7 +12,7 @@
     <arg name="orientation_covariance_diagonal" default="[0.01745, 0.01745, 0.15708]" doc="Diagonal elements of the orientation covariance matrix"/>
 
     <!-- node -->
-	<node pkg="xsens_driver" type="mtnode.py" name="xsens_driver" output="screen" >
+	<node pkg="xsens_driver" type="mtnode.py" name="xsens_driver">
         <remap from="imu/data" to="MTI_imu/data_raw" />
 		<remap from="imu/mag" to="MTI_imu/mag" />
 		<param name="device" value="$(arg device)"/>
@@ -27,7 +27,7 @@
 		<rosparam param="orientation_covariance_diagonal" subst_value="True">$(arg orientation_covariance_diagonal)</rosparam>
 	</node>
 
-    <node name="imu_filter_node_magwick" pkg="imu_filter_madgwick" type="imu_filter_node" output="screen" >
+    <node name="imu_filter_node_magwick" pkg="imu_filter_madgwick" type="imu_filter_node" >
 		<remap from="imu/data_raw" to="/MTI_imu/data_raw" />
 		<remap from="imu/mag" to="/MTI_imu/mag" />
 		<remap from="imu/data" to="/MTI_imu/data" />
