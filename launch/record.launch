@@ -8,10 +8,12 @@
         /stereo/camera1/image_compressed
         /stereo/camera1/image
         /stereo/camera1/metadata
+	/stereo/camera1/static_parameters
         /stereo/camera2/camera_info
         /stereo/camera2/image_compressed
         /stereo/camera2/image
         /stereo/camera2/metadata
+	/stereo/camera2/static_parameters
         /gps_data_raw 
         /MTI_imu/data_raw 
 	    /MTI_imu/data
