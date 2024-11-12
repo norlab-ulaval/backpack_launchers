@@ -2,9 +2,9 @@
 <launch>
     <group ns="stereo">
 		<!--arg name="node_name" default="norlab_basler_camera_driver_node" /-->
-		<arg name="startup_user_set" default="UserSet1" /> <!-- UserSet1: fixed exposure / UserSet2: Bracketing (stm32) / UserSet3: monocular bracketing (left) and auto-exposure (right)-->
+		<arg name="startup_user_set" default="UserSet2" /> <!-- UserSet1: fixed exposure / UserSet2: Bracketing (stm32) / UserSet3: monocular bracketing (left) and auto-exposure (right)-->
 		<arg name="compressed" default="true" />
-		<arg name="image_encoding" default="bayer_rggb8" />
+		<arg name="image_encoding" default="bayer_rggb12" />
 		<arg name="gain" default="0.0" />
 
 
