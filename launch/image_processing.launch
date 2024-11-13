@@ -9,7 +9,7 @@
         </node>
 	<node if="$(arg enable_debayer)" pkg="nodelet" type="nodelet" name="stereo_debayer_camera1" args="load image_proc/debayer stereo_camera1_manager">
                 <param name="bayer_pattern" value="rggb"/>
-                <remap from="image_raw" to="/stereo/camera1/image"/>
+                <remap from="image_raw" to="/stereo/camera1/image_decompressed"/>
                 <remap from="camera_info" to="/stereo/camera1/camera_info"/>
                 <remap from="image_color" to="/stereo/camera1/debayer/image"/>
                 <remap from="image_mono" to="/stereo/camera1/debayer/image_mono"/>
@@ -29,7 +29,7 @@
         </node>
 	<node if="$(arg enable_debayer)" pkg="nodelet" type="nodelet" name="stereo_debayer_camera2" args="load image_proc/debayer stereo_camera2_manager">
                 <param name="bayer_pattern" value="rggb"/>
-                <remap from="image_raw" to="/stereo/camera2/image"/>
+                <remap from="image_raw" to="/stereo/camera2/image_decompressed"/>
                 <remap from="camera_info" to="/stereo/camera2/camera_info"/>
                 <remap from="image_color" to="/stereo/camera2/debayer/image"/>
                 <remap from="image_mono" to="/stereo/camera2/debayer/image_mono"/>
